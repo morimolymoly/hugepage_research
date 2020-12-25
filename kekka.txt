@@ -1,0 +1,112 @@
+moly@mya:~/km/huge$ make test-all
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./1gb
+
+ Performance counter stats for 'sudo ./1gb':
+
+     3,505,802,708      dTLB-loads                                                  
+             8,925      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,025      iTLB-loads                                                  
+             7,090      iTLB-load-misses          #  234.38% of all iTLB cache hits 
+
+       9.235900643 seconds time elapsed
+
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./2mb
+
+ Performance counter stats for 'sudo ./2mb':
+
+     3,506,314,993      dTLB-loads                                                  
+            11,739      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,165      iTLB-loads                                                  
+             4,919      iTLB-load-misses          #  155.42% of all iTLB cache hits 
+
+       9.104766762 seconds time elapsed
+
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./4kb
+
+ Performance counter stats for 'sudo ./4kb':
+
+     3,505,683,420      dTLB-loads                                                  
+            10,327      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,167      iTLB-loads                                                  
+             2,467      iTLB-load-misses          #   77.90% of all iTLB cache hits 
+
+       9.457669799 seconds time elapsed
+
+
+
+
+
+
+
+moly@mya:~/km/huge$ make test-all
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./1gb
+
+ Performance counter stats for 'sudo ./1gb':
+
+     7,009,715,076      dTLB-loads                                                  
+             8,511      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,088      iTLB-loads                                                  
+             6,570      iTLB-load-misses          #  212.76% of all iTLB cache hits 
+
+      18.453727417 seconds time elapsed
+
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./2mb
+
+ Performance counter stats for 'sudo ./2mb':
+
+     7,009,608,668      dTLB-loads                                                  
+             8,523      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,225      iTLB-loads                                                  
+             2,229      iTLB-load-misses          #   69.12% of all iTLB cache hits 
+
+      18.154922708 seconds time elapsed
+
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./4kb
+
+ Performance counter stats for 'sudo ./4kb':
+
+     7,009,616,261      dTLB-loads                                                  
+             9,947      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,074      iTLB-loads                                                  
+             4,503      iTLB-load-misses          #  146.49% of all iTLB cache hits 
+
+      18.733689253 seconds time elapsed
+
+
+
+
+
+
+moly@mya:~/km/huge$ make test-all
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./1gb
+
+ Performance counter stats for 'sudo ./1gb':
+
+    14,014,409,306      dTLB-loads                                                  
+             9,854      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,020      iTLB-loads                                                  
+             3,940      iTLB-load-misses          #  130.46% of all iTLB cache hits 
+
+      37.029686125 seconds time elapsed
+
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./2mb
+
+ Performance counter stats for 'sudo ./2mb':
+
+    14,013,736,796      dTLB-loads                                                  
+             8,440      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,235      iTLB-loads                                                  
+             2,739      iTLB-load-misses          #   84.67% of all iTLB cache hits 
+
+      36.329478252 seconds time elapsed
+
+sudo perf stat -e dTLB-loads,dTLB-load-misses,iTLB-loads,iTLB-load-misses sudo ./4kb
+
+ Performance counter stats for 'sudo ./4kb':
+
+    14,015,433,977      dTLB-loads                                                  
+            17,843      dTLB-load-misses          #    0.00% of all dTLB cache hits 
+             3,094      iTLB-loads                                                  
+             2,885      iTLB-load-misses          #   93.24% of all iTLB cache hits 
+
+      37.722332164 seconds time elapsed
